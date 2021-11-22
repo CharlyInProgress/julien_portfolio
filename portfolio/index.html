@@ -1,0 +1,840 @@
+<!--
+Author: Julien FERRIER
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Julien FERRIER| Home :: Portfolio</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Custom Theme files -->
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Julien Ferrier Resume Portfolio Preface Responsive web, Android Compatible web,
+Smartphone Compatible web" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- End -->
+  <!-- webfonts -->
+  <link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- webfonts -->
+  <!---- start-smoth-scrolling---->
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+  </script>
+  <!---- start-smoth-scrolling---->
+</head>
+
+<body>
+  <!-- container -->
+  <!-- header -->
+  <div id="home" class="header">
+    <div class="container">
+      <!-- top-hedader -->
+      <div class="top-header">
+        <!-- /logo -->
+        <!--top-nav---->
+        <div class="top-nav">
+          <div class="navigation">
+            <div class="logo">
+              <h1><a href="index.html"><span>I</span> AM</a></h1>
+            </div>
+            <div class="navigation-right">
+              <span class="menu"><img src="images/menu.png" alt=" " /></span>
+              <nav class="link-effect-3" id="link-effect-3">
+                <ul class="nav1 nav nav-wil">
+                  <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+                  <li><a class="scroll" data-hover="About" href="#about">About</a></li>
+                  <li><a class="scroll" data-hover="Skills" href="#services">Skills</a></li>
+                  <li><a class="scroll" data-hover="Experience" href="#work">Experience</a></li>
+                  <li><a class="scroll" data-hover="Projects" href="#blogs">Projects</a></li>
+                  <li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <!-- script-for-menu -->
+              <script>
+                $("span.menu").click(function () {
+                  $("ul.nav1").slideToggle(300, function () {
+                    // Animation complete.
+                  });
+                });
+              </script>
+              <!-- /script-for-menu -->
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /top-hedader -->
+        </div>
+        <div class="banner-info">
+          <div class="col-md-7 header-right">
+            <h1>Julien FERRIER</h1>
+            <h6>FULL-STACK Web Engineer.</h6>
+            <div class="hero__links">
+              <a href="docs/Julien-Ferrier-Resume-Off.pdf" target="_blank" class="hero__resume btn"
+                title="Click to view my Resume">View Resume</a>
+              <ul class="hero__social">
+                <li>
+                  <a href="https://github.com/jferrier34" rel="noopener" target="_blank" title="Github">
+                    <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/julienferrier/" rel="noopener" title='LinkedIn' target="_blank">
+                    <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="address">
+
+              <li>
+                <ul class="address-text">
+                  <li><b>NAME</b></li>
+                  <li>JULIEN FERRIER</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>D.O.B</b></li>
+                  <li>21-FEB-1998</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>MOBILE </b></li>
+                  <li>+33629149499</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>ADDRESS </b></li>
+                  <li>3719 Villa Terrace, San Diego CA 92104</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>E-MAIL </b></li>
+                  <li><a href="mailto:julien.ferrier@epitech.eu.com">julien.ferrier@epitech.eu</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>ONLINE RESUME </b></li>
+                  <li><a href="docs/Julien-Ferrier-Resume-Off.pdf">View here</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>INFO</b></li>
+                  <li>In regards to my legal eligibility to train with your
+                    organization, I would be participating in the J-1 Visa Internship
+                    USA program, sponsored by the Council on International Educational Exchange [CIEE]. (www.ciee.org)
+                    As my sponsor, CIEE is authorized by the U.S. government to issue the necessary documentation for
+                    me to obtain a J-1 visa
+                  </li>
+                </ul>
+              </li>
+               <!-- <form action="https://getform.io/f/2a18e435-0951-43eb-ac66-d6827c9dbd8e" method="POST">
+                  <input type="text" name="name" placeholder="name" />
+                  <button type="submit">Send</button>
+                </form>-->
+                <form name="contact" method="POST" data-netlify="true">
+                  <input type="text" name="name" placeholder="name" />
+                  <button type="submit">Send</button>
+                </form>
+
+            </ul>
+          </div>
+          <div class="col-md-5 header-left">
+            <img src="images/fdp_linkedin.png" alt="">
+          </div>
+          <div class="clearfix"> </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about" class="about">
+    <div class="col-md-6 about-left">
+      <div id="owl-demo1" class="owl-carousel owl-carousel2">
+        <div class="item">
+          <div class="about-left-grid">
+            <h2>As a <span>Full-Stack Developer</span></h2>
+            <p>Throughout my career, I have made it my priority to
+              utilize current technologies and new techniques to drive elegant,
+              creative solutions across a range of projects. Comfortable in both collaborative and independent roles, I
+              offer refined
+              analytical and critical thinking skills, and I can adapt and revise my strategies to meet evolving
+              priorities, shifting
+              needs, and emergent issues.
+            <p>Here, I am responsible for <strong>full lifecycle development</strong> of next-generation software, from
+              initial
+              requirement gathering to design, coding, unit testing, documentation and integration & deployment.</p>
+            <ul>
+              <li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+              <li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="about-left-grid">
+            <h2>My <span>Education</span></h2>
+            <p>I've completed my Bachelor in Computer science from <a href="https://www.epitech.eu/en/"
+                target="_blank">Epitech European
+                Institute of technology</a>,
+              Toulouse (FRANCE), during the period of Sept 2018 - Aug 2020.
+            <p>Foreign Exchange Program<a href="https://www.csusm.edu" target="_blank"> California State University San
+                Marcos</a> San Marcos (CA), during the period of Dec 2020 - Sept 2021.</p>
+            <p>Poursuing my Master Degree<a href="https://www.epitech.eu/en/" target="_blank"> Epitech European
+                Institute of technology</a> Toulouse (FRANCE), during the period of Aug 2020 until Dec 2022.</p>
+            <ul>
+              <li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+              <li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="about-left-grid">
+            <h2>Free time or <span>Hobbies</span></h2>
+            <p>When I’m not in front of a computer I enjoy traveling, CrossFit, participating in tech events like
+              Hackathon,
+              Hackmeet etc.</p>
+            <p>I have been fortunate to learn and having new experiences in general.</p>
+            <ul>
+              <li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+              <li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 about-right">
+
+    </div>
+    <div class="clearfix"> </div>
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo1").owlCarousel({
+          items: 1,
+          lazyLoad: false,
+          autoPlay: true,
+          navigation: false,
+          navigationText: false,
+          pagination: true,
+        });
+      });
+    </script>
+    <!-- Feedback -->
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo3").owlCarousel({
+          items: 1,
+          lazyLoad: false,
+          autoPlay: true,
+          navigation: false,
+          navigationText: true,
+          pagination: true,
+        });
+      });
+    </script>
+  </div>
+  <!-- /about -->
+  <!-- services -->
+  <div id="services" class="services">
+    <div class="container">
+      <div class="service-head one text-center ">
+        <h4>WHAT I DO</h4>
+        <h3>MY <span>SKILLS</span></h3>
+        <span class="border two"></span>
+      </div>
+      <!-- services-grids -->
+      <div class="wthree_about_right_grids w3l-agile">
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-th-large"></i>
+            </div>
+          </div>
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Front-end Development</h4>
+          </div>
+          <div class="clearfix"> </div>
+          <div class="col-md-12 skill-group-div">
+            <!-- Skill Bars -->
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">HTML <i class="val">90%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">CSS <i class="val">85%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Bootstrap <i class="val">85%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Material UI <i class="val">80%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Javascript <i class="val">75%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Ionic <i class="val">90%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">AngularJs <i class="val">85%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">ReactJs <i class="val">75%</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-leaf"></i>
+            </div>
+          </div>
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Server-side Development</h4>
+          </div>
+          <div class="clearfix"> </div>
+          <div class="col-md-12 skill-group-div">
+            <!-- Skill Bars -->
+            <div class="progress skill-bar ">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100">
+                <span class="skill">PHP <i class="val">80%</i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">CakePHP <i class="val">75%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Wordpress <i class="val">80%</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="progress skill-bar ">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                aria-valuemax="100">
+                <span class="skill">NodeJS <i class="val">85%</i></span>
+              </div>
+            </div>
+            <div class="progress skill-bar ">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100">
+                <span class="skill">Java <i class="val">70%</i></span>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"></div>
+        <span class="border two"></span>
+        <hr>
+        </hr>
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Databases</h4>
+            <ul class="news">
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <!--<div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-wrench"></i>
+            </div>
+          </div>-->
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Project Tools</h4>
+            <ul class="news">
+              <li>Agile</li>
+              <li>Scrum</li>
+              <li>Git</li>
+              <li>SVN</li>
+              <li>Jira</li>
+              <li>Android Studio</li>
+              <li>XCode</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <!--<div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-certificate"></i>
+            </div>
+          </div>-->
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Tools & Ids</h4>
+            <ul class="news">
+              <li>VSCode</li>
+              <li>NetBeans</li>
+              <li>Sublime Text</li>
+              <li>Notepad++</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <!--<div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-tint"></i>
+            </div>
+          </div>-->
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Others</h4>
+            <ul class="news">
+              <li>Sketch</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Wordpress</li>
+              <li>Shopify</li>
+              <li>AWS</li>
+              <li>Windows & Linux</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services-grids -->
+  </div>
+  </div>
+  <!-- services -->
+  <!--work-experience-->
+  <div id="work" class="work">
+    <div class="container">
+      <div class="service-head text-center">
+        <h4>WHAT I DID</h4>
+        <h3>MY <span>EXPERIENCE</span></h3>
+        <span class="border one"></span>
+      </div>
+      <div class="time-main w3l-agile">
+        <div class="col-md-6 year-info">
+          <ul class="year">
+            <li>December 2020 <i class="glyphicon glyphicon-arrow-right"></i> <span id="tillDate"></span>July 2021</li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="col-md-6 timeline">
+          <li>
+            <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title"><a href="https://welcome-ttp.com/#" target="_blank">Welcome To The
+                    Party <i>San
+                      Diego, CA</i></a></h4>
+                <h5>Mobile Developer & UI/UX Designer Freelance</h5>
+              </div>
+              <div class="timeline-body">
+                <p><b>Create and design fully mobile application mockups by utilizing Figma (61 screens) as well as
+                    contribute to the
+                    development of a mobile app cross-platform.</b><br>
+                  Developed an effective mobile application cross-platform by utilizing React Native and Mongo DB
+                  platforms to associate
+                  and support the event’s organizers and participants, including messaging system, geolocation services,
+                  admin panel with
+                  statistics, and managing event settings.</p>
+                <p><strong>Great! place to learn.</strong></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="col-md-6 year-info">
+          <ul class="year">
+            <li>March 2020 <i class="glyphicon glyphicon-arrow-right"></i> <span id="tillDate"></span>July 2020</li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="col-md-6 timeline">
+          <li>
+            <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title"><a href="https://www.viaxoft.com/en/">Viaxoft <i>Marseille, FRA</i></a></h4>
+                <h5>Mobile Developer Intern & UI/UX Designer</h5></a></h4>
+              </div>
+              <div class="timeline-body">
+                <p><b>Gathered and saved data in MongoDB databases along with linked by NodeJS to the front-end.
+                  </b>
+                <p>Devised and deployed loyalty programs for the travel agencies by creating internal mobile application
+                  cross-platform in
+                  Ionic and angular frameworks while leading and efficiently managing the project.<br>
+                  Inspected and deployed mobile applications on Xcode software along with designed mockups in Figma
+                  platform (43
+                  Screens).</p>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="col-md-6 year-info">
+          <ul class="year">
+            <li>Jan 2019 <i class="glyphicon glyphicon-arrow-right"></i> <span id="tillDate"></span>September 2021</li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="col-md-6 timeline">
+          <li>
+            <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-panel">
+              <h4 class="timeline-title"><a href="https://welcome-ttp.com/#" target="_blank">Limitrend <i>San
+                    Diego, CA</i></a></h4>
+              <h5>Project Leader & Web Developer Full-Stack</h5></a></h4>
+              <div class="timeline-body">
+                <p><b>Delivered a project log document and updated the project tasks while utilizing the express JS
+                    framework to support
+                    communication between end-points. Conducted API requests test in Swagger and unit-test CI/CD for the
+                    validation of the
+                    services.
+                  </b>
+                <p>Led and efficiently managed a team of eight co-workers as a Group/Scrum Master to develop a website,
+                  created a native
+                  mobile application, and one cross-platform in the React Native conducted by the MYSQL platform.</p>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="col-md-6 year-info">
+          <ul class="year">
+            <li>Jan 2018 <i class="glyphicon glyphicon-arrow-right"></i> <span id="tillDate"></span>April 2018</li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="col-md-6 timeline">
+          <li>
+            <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-panel">
+              <h4 class="timeline-title"><a href="https://www.ataraxie.fr" target="_blank">Ataraxie <i>Carcassonne,
+                    FRA</i></a></h4>
+              <h5>Web Developer Intern</h5></a></h4>
+              <div class="timeline-body">
+                <p><b>Implemented design and realization of the user interface while deploying the password generator on
+                    Ataraxie’s intranet.
+                  </b>
+                <p>Created a secured password and forms generator as per the user’s criteria developed in the PHP
+                  (CakePHP) and JavaScript
+                  by designing an algorithm.</p>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="col-md-6 year-info">
+          <ul class="year">
+            <li>May 2017 <i class="glyphicon glyphicon-arrow-right"></i> <span id="tillDate"></span>September 2017</li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="col-md-6 timeline">
+          <li>
+            <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-panel">
+              <h4 class="timeline-title"><a href="https://www.viaxoft.com/en/" target="_blank">Viaxoft <i>Marseille,
+                    FRA</i></a></h4>
+              <h5>Software Developer Intern</h5></a></h4>
+              <div class="timeline-body">
+                <p><b>Carried out unit tests and deployed Jenkins to reliably develop and test software as well as
+                    organized the technical
+                    end-user documentation and executed it to the diverse teams.
+                  </b>
+                <p>Identified and resolved bugs from client’s CRM by conducting automation tests and utilizing
+                  Selenium under
+                  Fluentlenium.</p>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <!--//work-experience-->
+  <!-- top-grids -->
+  <dEiv class="blog" id="blogs">
+    <div class="container">
+      <div class="service-head text-center">
+        <h4>PROJECTS</h4>
+        <h3>MY <span>Most Projects</span></h3>
+        <span class="border one"></span>
+      </div>
+      <div class="news-grid w3l-agile">
+        <div class="col-md-6 news-text">
+          <h3> <a href="" target="_blank">Epiteach' - As Project Leader & Full-Stack
+              Developer</a></h3>
+          <ul class="news">
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>MySQL</li>
+            <li>Bootstrap</li>
+          </ul>
+          <p><strong>Created online quiz based on student’s level and lessons by utilizing forum and instant messaging
+              platforms.</strong>
+            Improved the TOEIC scores of students by introducing a mutual learning platform while utilized it as a
+            dashboard for
+            teachers.<br>
+            Successfully enrolled more than 400+ students by effectively promoting the Epiteach objectives.<br>
+            Increased the web security by evaluating and identifying risks associated with the use of services.
+          </p>
+        </div>
+        <div class="col-md-6 news-text">
+          <h3> <a href="https://www.in.ckgs.us/" target="_blank">Area - As Project Leader & Web Developer
+              Full-Stack</a>
+          </h3>
+          <ul class="news">
+            <li>Golang</li>
+            <li>Python</li>
+            <li>NodeJS</li>
+            <li>ReactJS</li>
+            <li>CSS</li>
+          </ul>
+          <p><strong>Delivered various back-end services by utilizing Golang, Python, and NojeJS.</strong>
+            Designed and created a dashboard utilizing various services by developing front-end in React as well as
+            automatically
+            deployed services with the Travis CI and using Google App Engine.<br>
+            Introduced a micro-service architecture with 10 independent services and 12-factor applications in a GCP
+            environment.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="news-grid w3l-agile">
+        <div class="col-md-6 news-text">
+          <h3> <a href="https://www.bookstackapp.com/" target="_blank">Familial Bank of Mirabeau</a></h3>
+          <ul class="news">
+            <li>WLanguage</li>
+            <li>C#</li>
+            <li>MySQL</li>
+            <li>Windev Databases</li>
+          </ul>
+          <p><strong>Created a mobile application by utilizing WLangage and Winddev Mobile software to efficiently
+              manage the bank customers
+              and employers. Developed and utilized data with the MYSQL, Windev databases, and C# web services.</strong>
+            Established a visitor authentication system and transactions management while the application efficiently
+            managing the
+            customer statistics, simulation of bank loans, expenses, and overdraft management.
+          </p>
+        </div>
+        <div class="col-md-6 news-text">
+          <h3> <a href="https://www.in.ckgs.us/" target="_blank">AppyGen - As Project Leader & Web Developer
+              Full-Stack</a>
+          </h3>
+          <ul class="news">
+            <li>NodeJS</li>
+            <li>Ionic</li>
+            <li>Angular JS</li>
+            <li>MySQL</li>
+          </ul>
+          <p><strong>Developed the application in Ionic and angular framework propelled by NodeJS and MySQL.</strong>
+            Enabled users to easily design and customize mobile application cross-platform by web browser by delivering
+            an App
+            builder.<br>
+            Launched the applications through necessary Ionic commands and movement of APK to the directory folder.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+    </div>
+    <!-- top-grids -->
+    <!-- /blog-pop-->
+
+    </div>
+
+
+    <!-- /header -->
+    <div class="footer" id="contact">
+      <div class="container">
+        <div class="service-head one text-center">
+          <h4>CONTACT ME</h4>
+          <h3>GET <span>IN TOUCH WITH ME</span></h3>
+          <span class="border two"></span>
+        </div>
+        <div class="mail_us">
+          <div class="col-md-6 mail_left">
+            <div class="contact-grid1-left">
+              <div class="contact-grid1-left1">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <h4>Contact By Email</h4>
+                <ul>
+                  <li>Primary: <a href="mailto:julien.ferrier@epitech.eu">julien.ferrier@epitech.eu</a></li>
+                  <li>Secondary: <a href="mailto:ferri026@cougars.csusm.edu">ferri026@cougars.csusm.edu</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-grid1-left">
+              <div class="contact-grid1-left1">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                <h4>Contact By Mobile</h4>
+                <ul>
+                  <li>Mobile: +33 629149499</li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-grid1-left">
+              <div class="contact-grid1-left1">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                <h4>Looking For Address</h4>
+                <ul>
+                  <li>Address: 3719 Villa Terrace</li>
+                  <li>San Diego, CA 92104, United States Of America</li>
+                </ul>
+              </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="copy_right text-center">
+          <p class="float-left">&copy; 2021 A production of Julien FERRIER</p>
+          <ul class="hero__social">
+            <li>
+              <a href="https://github.com/jferrier34" rel="noopener" target="_blank" title="GitHub">
+                <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/julienferrier/" rel="noopener" target="_blank" title='LinkedIn'>
+                <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+    <!-- /container -->
+    <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!--start-smooth-scrolling-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        /*
+                      var defaults = {
+                          containerID: 'toTop', // fading element id
+                        containerHoverID: 'toTopHover', // fading element hover id
+                        scrollSpeed: 1200,
+                        easingType: 'linear'
+                        };
+                      */
+        $('.progress .progress-bar').css("width",
+          function () {
+            return $(this).attr("aria-valuenow") + "%";
+          }
+        );
+        $().UItoTop({
+          easingType: 'easeOutQuart'
+        });
+
+      });
+    </script>
+    <!--end-smooth-scrolling-->
+    <!-- //for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
